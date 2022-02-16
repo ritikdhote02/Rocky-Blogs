@@ -1,0 +1,60 @@
+.bg-primary{
+    background:#3e94f0!important;
+}
+
+.height-500{
+  height: 500px;
+}
+
+.mt30{
+    margin-top:30px;
+}
+
+.mt15{
+    margin-top:15px;
+}
+
+.mt90{
+    margin-top:8%;
+}
+.container-custom{
+    width:90%;
+    margin:auto;
+}
+
+.card-small {
+     width:400px;
+    }
+
+.container-post{
+    margin-left:3%;
+    margin-right:1%;
+    margin-top:2%;
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+.list-inline {
+  padding-left: 0;
+  margin-left: -5px;
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#mobile-demo{
+    mix-blend-mode: lighten;
+    background: #66FFFF;
+}
+
+

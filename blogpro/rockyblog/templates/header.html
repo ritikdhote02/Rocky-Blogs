@@ -1,0 +1,38 @@
+
+<ul id="dropdown1" class="dropdown-content">
+  {% for cat in cats %}
+  <li><a href="/category/{{cat.url}}">{{cat.title}}</a></li>
+  {% endfor %}
+</ul>
+<div class="navbar-fixed">
+      <nav>
+          <div class="nav-wrapper #0091ea light-blue accent-4">
+<!--             <a href="/home" class="brand-logo" style="margin-left:5%;"><img src="/media/wspl.png"><img src="/media/wpl.png" alt="Rocky-Blog's"></a>-->
+<!--             <a href="/home" class="brand-logo" style="margin-left:5%;">Rocky-Blog's</a>-->
+             <a href="/home" class="brand-logo" style="margin-left:5%;"><img src="/media/wspl.png" alt="Rocky-Blog's"></a>
+             <a href="#"  data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+             <ul class="right hide-on-med-and-down" style="margin-right:5%;">
+                  <li><a href="/home">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
+                  <!-- Dropdown Trigger -->
+                  <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Category<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
+         </div>
+      </nav>
+</div>
+
+<ul id="dropdown2" class="dropdown-content">
+  {% for cat in cats %}
+  <li><a href="/category/{{cat.url}}">{{cat.title}}</a></li>
+  {% endfor %}
+</ul>
+<div>
+   <ul class="side-nav" id="mobile-demo">
+       <b><li><a href="/home">Home</a></li>
+       <li><a href="#">About</a></li>
+       <li><a href="#contact">Contact Us</a></li>
+       <!-- Dropdown Trigger -->
+       <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Category<i class="material-icons right">arrow_drop_down</i></a>
+  </ul></b>
+</div>

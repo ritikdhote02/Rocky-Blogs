@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block title %} Home | Welcome to Rocky-Blog {% endblock %}
+
+{% block content %}
+<div class="container-custom center-align">
+    <h3><b><i> {{cat.title}} </i></b></h3>
+    <div class="img-container">
+        <img src="/media/{{cat.image}}" class="responsive-img" style="max-height:450px; width:90%; object-fit:cover;" alt="Image">
+    </div>
+</div>
+  <div class="collection container-custom">
+      {% for p in posts %}
+        <a href="/blog/{{p.url}}" class="collection-item">{{p.title}}</a>
+      </div>
+        {% empty %}
+            <h4 class="center-align">No post available in this category right now..!!!</h4>
+      {% endfor %}
+{% endblock %}

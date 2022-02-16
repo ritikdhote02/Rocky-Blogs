@@ -1,0 +1,6 @@
+1. Django installation.
+2. Editor:- ckeditor(Used)
+            tinymce pypi(optional)
+4. Admin panel :-Jazzmin django admin(Used)
+                 Material django admin(optional)
+5. Carosel(slider):- Owl Carousel(Used)
